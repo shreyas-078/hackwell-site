@@ -5,11 +5,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hackwell 2025</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/indexStyles.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
+  <script src="{{ url_for('static', filename='js/indexScript.js') }}" defer></script>
 </head>
 
+
 <body>
-  <h1>Hackwell 2025</h1>
+  <div id="vanta-bg"></div> <!-- Target Element for Vanta.js -->
+  <h1 id="hackwell-heading">Hackwell <br> 5.0</h1>
+  <h2 id="hackwell-subheading">Every line matters.</h2>
+  <h2 id="hackwell-hours">48-Hour Online Hackathon</h2>
+
+  <div id="about-college-container">
+    <h2>ABOUT THE COLLEGE</h2>
+    <p>JSS Academy of Technical Education (JSSATE) was
+      established in the year 1997 at Bengaluru under the
+      umbrella of JSS Mahavidyapeetha, Mysuru. The
+      Institution is presently affiliated to Visvesvaraya
+      Technological University offering eight
+      undergraduate and four postgraduate programs
+      approved by the AICTE. The Institute has been
+      accredited with an A+ grade by the National
+      Assessment and Accreditation Council (NAAC). The
+      Institute has also achieved a Performer Band in
+      ARIIA ranking and Diamond Class in QS-I Gauge.
+      The Institute has been awarded a <span>4-star rating</span> by
+      the Innovation Cell, Ministry of Education,
+      Government of India, for the year 2023-24.
+    </p>
+  </div>
+
+  <div id="about-dept-container">
+    <h2>ABOUT THE DEPARTMENT</h2>
+    <p>The Department of Computer Science and
+      Engineering was established in the year 1997, with
+      the objective of imparting quality education in the
+      field of Computer Science and Engineering. The
+      Program is accredited by National Board of
+      Accreditation (NBA) with current intake of 180
+      Students. The department has to its credit a team
+      of qualified, experienced and dedicated faculty,
+      whose main aim is to equip students with the
+      knowledge and expertise to grow professionally
+      and contribute significantly to the society.
+    </p>
+  </div>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="{{ url_for('static', filename='images/pic1.jpg') }}" style="width:100%">
+      <div class="text" style="background-color:black;"> Guest Panel</div>
+    </div>
+
+    <div class=" mySlides fade">
+      <img src="{{ url_for('static', filename='images/pic2.jpg') }}" style="width:100%">
+      <div class="text" style="background-color:black ;">Lamp Lighting Ceremony </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="{{ url_for('static', filename='images/pic3.jpg') }}" style="width:100%">
+      <div class="text" style="background-color:black ;">Hackwell Legacy</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="{{ url_for('static', filename='images/pic4.jpg') }}" style="width:100%">
+
+      <div class="text" style="background-color:black ;">Participants</div>
+    </div>
+
+    <a class="prev" id="prev">&#10094;</a>
+    <a class="next" id="next">&#10095;</a>
+    <div class="clear"></div>
+  </div>
+  <br>
+
+  <div style="text-align:center" id="pagination">
+
+  </div>
+  <div id="chief-patron-container">
+    <h2>CHIEF PATRON</h2>
+    <p>
+      His Holiness Jagadguru Sri Shivarathri Deshikendra Mahaswamigalavaru, <br>
+      President JSS Mahavidyapeetha, Mysuru
+    </p>
+  </div>
+
+  <div id="patrons-container">
+    <h2>PATRONS</h2>
+    <div id="patrons-list">
+      <div class="patron1">
+        Dr. C G Betsurmath,<br>
+        Executive Secretary, JSSMVP, Mysuru.
+      </div>
+      <div class="patron2">
+        Dr. B. Suresh,<br>
+        Director, TED, JSSMVP, Mysuru.
+      </div>
+      <div class="patron3">
+        Dr. H R Mahadevaswamy,<br>
+        Joint Director, TED, JSSMVP, Mysuru.
+      </div>
+      <div class="patron4">
+        Dr. Bhimasen Soragon,<br>
+        Principal , JSSATE, Bengaluru.
+      </div>
+    </div>
+  </div>
+  <div class="association-container">
+    <span>In association with</span>
+    <img src="{{ url_for('static', filename='images/anveshan-text-logo.png') }}">
+  </div>
+
+  <div class="qr-container">
+    <h2>SCAN TO REGISTER</h2>
+    <img src="{{ url_for('static', filename='images/qr_code.png') }}" alt="QR Code" id="qr-code">
+  </div>
+
+  <div id="contact-container">
+    <h2>CONTACT</h2>
+    <div id="contact-details">
+      <div class="contact1">Mrs. Snehalatha N,<br>
+        Asst. Professor, CSE, JSSATEB.<br>
+        9844399176<br>
+        <br>
+        <br>
+      </div>
+      <div class="contact2">Dr. Rajeshwari K.S,<br>
+        Asst. Professor, CSE, JSSATEB.<br>
+        9980145619<br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

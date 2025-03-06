@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+  font-family: 'VT323', monospace;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#hackwell-heading {
+  margin: 0;
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 8rem;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.patron2,
+.patron4 {
+  text-align: right;
+}
+
+#hackwell-subheading {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
+  font-family: "Archivo Black", sans-serif;
+}
+
+#hackwell-hours {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+}
+
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+.mySlides {
+  display: none;
+  float: left;
+  position: relative;
+  min-width: 100%;
+}
+
+.countSelectorSection,
+.autoCheck {
+  margin: 1rem;
+  display: inline-block;
+}
+
+#about-college-container,
+#about-dept-container,
+#chief-patron-container,
+#patrons-container,
+#contact-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 10% 0 10%;
+}
+
+#about-college-container h2,
+#about-dept-container h2,
+#chief-patron-container h2,
+#patrons-container h2,
+#contact-container h2 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+#patrons-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 2rem;
+  width: 60%;
+  place-content: center;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+#about-college-container p,
+#about-dept-container p,
+#chief-patron-container p,
+#patrons-container p,
+#contact-container p {
+  margin: 1rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: contain;
+
+}
+
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  padding: 0;
+  margin: 2rem auto 0 auto;
+  border: 3px solid #000000;
+  animation: glow 2s infinite linear;
+}
+
+#pagination {
+  margin-bottom: 2rem;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0%;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 2rem;
+  position: absolute;
+  padding: 0.2rem 0 0.4rem 0;
+  bottom: 0rem;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.qr-container {
+  max-width: fit-content;
+  position: relative;
+  padding: 0;
+  margin: 2rem auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.qr-container h2 {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+#qr-code {
+  animation: glow 2s infinite linear;
+  border: 3px solid #ff00008c;
+  width: 50%;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11pxs
+  }
+}
+
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px cyan;
+  }
+
+  25% {
+    box-shadow: 0 0 20px magenta;
+  }
+
+  50% {
+    box-shadow: 0 0 20px lime;
+  }
+
+  75% {
+    box-shadow: 0 0 20px orange;
+  }
+
+  100% {
+    box-shadow: 0 0 20px cyan;
+  }
+}
+
+h2 {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.association-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.association-container img {
+  width: 20vw;
+  margin-left: 2rem;
+  object-fit: contain;
+}
+
+#contact-details {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #patrons-list {
+    width: 90%;
+  }
+
+  .association-container img {
+    width: 40vw;
+  }
+
+  #about-college-container,
+  #about-dept-container,
+  #chief-patron-container,
+  #patrons-container,
+  #contact-container {
+    padding: 0 5% 0 5%;
+  }
+
+  #hackwell-heading {
+    font-size: 5rem;
+  }
+
+  #hackwell-subheading {
+    font-size: 2rem;
+  }
+
+  #hackwell-hours {
+    font-size: 1.5rem;
+  }
+
+  #about-college-container h2,
+  #about-dept-container h2,
+  #chief-patron-container h2,
+  #patrons-container h2,
+  #contact-container h2 {
+    font-size: 2rem;
+  }
+
+  .slideshow-container {
+    max-width: 80%;
+  }
+
+  #about-college-container p,
+  #about-dept-container p,
+  #chief-patron-container p,
+  #patrons-container p,
+  #contact-container p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #patrons-list {
+    width: 90%;
+  }
+
+  .association-container img {
+    width: 40vw;
+  }
+
+  #about-college-container,
+  #about-dept-container,
+  #chief-patron-container,
+  #patrons-container,
+  #contact-container {
+    padding: 0 5% 0 5%;
+  }
+
+  #hackwell-heading {
+    font-size: 5rem;
+  }
+
+  #hackwell-subheading {
+    font-size: 2rem;
+  }
+
+  #hackwell-hours {
+    font-size: 1.5rem;
+  }
+
+  #about-college-container h2,
+  #about-dept-container h2,
+  #chief-patron-container h2,
+  #patrons-container h2,
+  #contact-container h2 {
+    font-size: 2rem;
+  }
+
+  #about-college-container p,
+  #about-dept-container p,
+  #chief-patron-container p,
+  #patrons-container p,
+  #contact-container p {
+    font-size: 1.2rem;
+  }
+
+
+  .association-container {
+    font-size: 1rem;
+  }
+
+  #contact-details {
+    font-size: 1.2rem;
+  }
+
+  .association-container img {
+    width: 60vw;
+  }
+
+  .patron2,
+  .patron4 {
+    text-align: center;
+  }
+
+  .slideshow-container {
+    max-width: 90%;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  #hackwell-heading {
+    font-size: 3rem;
+  }
+
+  #hackwell-subheading {
+    font-size: 1.5rem;
+  }
+
+  #hackwell-hours {
+    font-size: 1rem;
+  }
+
+  #about-college-container h2,
+  #about-dept-container h2,
+  #chief-patron-container h2,
+  #patrons-container h2,
+  #contact-container h2 {
+    font-size: 1.5rem;
+  }
+
+  #about-college-container p,
+  #about-dept-container p,
+  #chief-patron-container p,
+  #patrons-container p,
+  #contact-container p {
+    font-size: 1rem;
+  }
+
+  #patrons-list div {
+    text-align: center;
+  }
+
+  .slideshow-container {
+    max-width: 90%;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .association-container {
+    font-size: 0.8rem;
+  }
+
+  #contact-details {
+    font-size: 1rem;
+  }
+
+  .association-container img {
+    width: 40vw;
+  }
+
+  .patron2,
+  .patron4 {
+    text-align: center;
+  }
+}
