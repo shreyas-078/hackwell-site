@@ -122,6 +122,7 @@ body {
 #instructions-container h2 {
   font-size: 3rem;
   margin: 1rem;
+  text-align: center;
 }
 
 #patrons-list {
@@ -275,6 +276,7 @@ img {
   text-decoration: underline;
   color: white;
   font-size: 2rem;
+  text-align: center;
 }
 
 #qr-code {
@@ -376,8 +378,17 @@ h2 {
     width: 90%;
   }
 
-  .association-container img {
-    width: 40vw;
+  #patrons-list div {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #chief-patron-container h2 {
+    font-size: 3rem;
+  }
+
+  #chief-patron-container p {
+    font-size: 1.7rem;
   }
 
   #about-hackwell-container,
@@ -406,7 +417,6 @@ h2 {
 
   #about-hackwell-container h2,
   #about-dept-container h2,
-  #chief-patron-container h2,
   #patrons-container h2,
   #contact-container h2,
   #event-dates h2,
@@ -422,7 +432,6 @@ h2 {
 
   #about-hackwell-container p,
   #about-dept-container p,
-  #chief-patron-container p,
   #patrons-container p,
   #contact-container p,
   #event-dates p,
@@ -528,6 +537,23 @@ h2 {
     width: 80%;
   }
 
+  #patrons-list {
+    width: 90%;
+  }
+
+  #patrons-list div {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #chief-patron-container h2 {
+    font-size: 2rem;
+  }
+
+  #chief-patron-container p {
+    font-size: 1rem;
+  }
+
   #hackwell-heading {
     font-size: 3rem;
   }
@@ -542,7 +568,6 @@ h2 {
 
   #about-hackwell-container h2,
   #about-dept-container h2,
-  #chief-patron-container h2,
   #patrons-container h2,
   #contact-container h2,
   #event-dates h2,
@@ -554,7 +579,6 @@ h2 {
 
   #about-hackwell-container p,
   #about-dept-container p,
-  #chief-patron-container p,
   #patrons-container p,
   #contact-container p,
   #event-dates p,
