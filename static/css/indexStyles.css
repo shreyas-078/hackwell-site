@@ -22,6 +22,10 @@ html {
   font-family: "Archivo Black", sans-serif;
 }
 
+#five-o {
+  font-family: 'Archivo Black', sans-serif !important;
+}
+
 .patron2,
 .patron4 {
   text-align: right;
@@ -34,6 +38,14 @@ html {
   color: white;
   font-size: 4rem;
   font-family: "Archivo Black", sans-serif;
+}
+
+#flyer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
 }
 
 #hackwell-hours {
@@ -72,11 +84,15 @@ body {
   display: inline-block;
 }
 
-#about-college-container,
+#about-hackwell-container,
 #about-dept-container,
 #chief-patron-container,
 #patrons-container,
-#contact-container {
+#contact-container,
+#event-dates,
+#registration-details-container,
+#about-college-container,
+#instructions-container {
   color: white;
   display: flex;
   flex-direction: column;
@@ -86,11 +102,15 @@ body {
   padding: 0 10% 0 10%;
 }
 
-#about-college-container h2,
+#about-hackwell-container h2,
 #about-dept-container h2,
 #chief-patron-container h2,
 #patrons-container h2,
-#contact-container h2 {
+#contact-container h2,
+#event-dates h2,
+#registration-details-container h2,
+#about-college-container h2,
+#instructions-container h2 {
   font-size: 3rem;
   margin: 1rem;
 }
@@ -106,14 +126,26 @@ body {
   font-size: 1.5rem;
 }
 
-#about-college-container p,
+#about-hackwell-container p,
 #about-dept-container p,
 #chief-patron-container p,
 #patrons-container p,
-#contact-container p {
+#contact-container p,
+#event-dates p,
+#registration-details-container p,
+#about-college-container p,
+#instructions-container p {
   margin: 1rem;
   font-size: 1.7rem;
   text-align: center;
+}
+
+#instructions-container {
+  margin-bottom: 3rem;
+}
+
+#instructions-container p {
+  text-align: left;
 }
 
 input[type="checkbox"] {
@@ -138,7 +170,7 @@ img {
 }
 
 #pagination {
-  margin-bottom: 2rem;
+  margin: 0 2rem;
 }
 
 .prev,
@@ -181,7 +213,6 @@ img {
   width: 100%;
   text-align: center;
 }
-
 
 /* The dots/bullets/indicators */
 .dot {
@@ -227,6 +258,7 @@ img {
 .qr-container h2 {
   text-decoration: none;
   font-size: 3rem;
+  margin-top: 0;
 }
 
 #qr-code {
@@ -302,6 +334,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px;
+  margin: 3rem 0;
 }
 
 .association-container img {
@@ -321,6 +354,10 @@ h2 {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  #flyer {
+    width: 80%;
+  }
+
   #contact-details {
     flex-direction: column;
   }
@@ -333,11 +370,15 @@ h2 {
     width: 40vw;
   }
 
-  #about-college-container,
+  #about-hackwell-container,
   #about-dept-container,
   #chief-patron-container,
   #patrons-container,
-  #contact-container {
+  #contact-container,
+  #event-dates,
+  #registration-details-container,
+  #about-college-container,
+  #instructions-container {
     padding: 0 5% 0 5%;
   }
 
@@ -353,11 +394,15 @@ h2 {
     font-size: 1.5rem;
   }
 
-  #about-college-container h2,
+  #about-hackwell-container h2,
   #about-dept-container h2,
   #chief-patron-container h2,
   #patrons-container h2,
-  #contact-container h2 {
+  #contact-container h2,
+  #event-dates h2,
+  #registration-details-container h2,
+  #about-college-container h2,
+  #instructions-container h2 {
     font-size: 2rem;
   }
 
@@ -365,16 +410,24 @@ h2 {
     max-width: 80%;
   }
 
-  #about-college-container p,
+  #about-hackwell-container p,
   #about-dept-container p,
   #chief-patron-container p,
   #patrons-container p,
-  #contact-container p {
+  #contact-container p,
+  #event-dates p,
+  #registration-details-container p,
+  #about-college-container p,
+  #instructions-container p {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 768px) {
+  #flyer {
+    width: 80%;
+  }
+
   #contact-details {
     flex-direction: column;
   }
@@ -387,11 +440,15 @@ h2 {
     width: 40vw;
   }
 
-  #about-college-container,
+  #about-hackwell-container,
   #about-dept-container,
   #chief-patron-container,
   #patrons-container,
-  #contact-container {
+  #contact-container,
+  #event-dates,
+  #registration-details-container,
+  #about-college-container,
+  #instructions-container {
     padding: 0 5% 0 5%;
   }
 
@@ -407,22 +464,28 @@ h2 {
     font-size: 1.5rem;
   }
 
-  #about-college-container h2,
+  #about-hackwell-container h2,
   #about-dept-container h2,
   #chief-patron-container h2,
   #patrons-container h2,
-  #contact-container h2 {
+  #contact-container h2,
+  #event-dates h2,
+  #registration-details-container h2,
+  #about-college-container h2,
+  #instructions-container h2 {
     font-size: 2rem;
   }
 
-  #about-college-container p,
+  #about-hackwell-container p,
   #about-dept-container p,
   #chief-patron-container p,
   #patrons-container p,
-  #contact-container p {
+  #contact-container p,
+  #event-dates p,
+  #about-college-container p,
+  #instructions-container p {
     font-size: 1.2rem;
   }
-
 
   .association-container {
     font-size: 1rem;
@@ -451,6 +514,10 @@ h2 {
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
+  #flyer {
+    width: 80%;
+  }
+
   #hackwell-heading {
     font-size: 3rem;
   }
@@ -463,19 +530,27 @@ h2 {
     font-size: 1rem;
   }
 
-  #about-college-container h2,
+  #about-hackwell-container h2,
   #about-dept-container h2,
   #chief-patron-container h2,
   #patrons-container h2,
-  #contact-container h2 {
+  #contact-container h2,
+  #event-dates h2,
+  #registration-details-container h2,
+  #about-college-container h2,
+  #instructions-container h2 {
     font-size: 1.5rem;
   }
 
-  #about-college-container p,
+  #about-hackwell-container p,
   #about-dept-container p,
   #chief-patron-container p,
   #patrons-container p,
-  #contact-container p {
+  #contact-container p,
+  #event-dates p,
+  #registration-details-container p,
+  #about-college-container p,
+  #instructions-container p {
     font-size: 1rem;
   }
 
@@ -507,4 +582,174 @@ h2 {
   .patron4 {
     text-align: center;
   }
+}
+
+body {
+  color: #eeeeee;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.podium-container {
+  --_podium-size: 4px;
+
+  @media only screen and (min-width: 600px) {
+    --_podium-size: 7.5px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    --_podium-size: 10px;
+  }
+
+  perspective: calc(var(--_podium-size) * 50);
+  margin-top: calc(var(--_podium-size) * 20);
+  display: grid;
+  place-items: center;
+}
+
+.podium {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  transform-style: preserve-3d;
+  font-size: calc(var(--_podium-size) * 9);
+  font-weight: 900;
+  gap: 12px;
+  transform: rotateX(-40deg);
+  text-align: center;
+}
+
+.podium__front {
+  background: red;
+  padding-inline: calc(var(--_podium-size) * 5);
+  padding-bottom: calc(var(--_podium-size) * 3);
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: top;
+  transition: transform 0.25s;
+}
+
+.podium__front:hover {
+  transform: translate3d(0, 0, 15px);
+}
+
+.podium__center {
+  transform: translate3d(0, 0, 5px);
+}
+
+.podium__center:hover {
+  transform: translate3d(0, 0, 20px);
+}
+
+.podium__front::after {
+  transform-style: preserve-3d;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top;
+  transform: rotatex(-90deg);
+}
+
+.podium__left::before,
+.podium__right::before {
+  background: #394c0c;
+  background: linear-gradient(to left, #394c0c, transparent);
+  transform-style: preserve-3d;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: right;
+  transform: rotatey(-90deg);
+}
+
+.podium__right::before {
+  background: linear-gradient(to right, #394c0c, transparent);
+  transform-origin: left;
+  transform: rotatey(90deg);
+}
+
+.podium__left {
+  padding-top: calc(var(--_podium-size) * 3);
+  background: #81ac1c;
+}
+
+.podium__left::after {
+  background: #739919;
+  background: linear-gradient(#739919, transparent);
+}
+
+.podium__center {
+  padding-top: calc(var(--_podium-size) * 5);
+  background: #90c020;
+}
+
+.podium__center::after {
+  background: #81ac1c;
+  background: linear-gradient(#90c020, transparent);
+}
+
+.podium__right {
+  padding-top: calc(var(--_podium-size) * 1);
+  background: #739919;
+}
+
+.podium__right::after {
+  background: #648616;
+  background: linear-gradient(#648616, transparent);
+}
+
+.podium__image {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -80%) translatez(-55px) rotatey(0);
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+
+.podium__image>img {
+  width: calc(var(--_podium-size) * 10);
+}
+
+.podium__image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(var(--_podium-size) * 6);
+  border-radius: 100%;
+  filter: blur(20px);
+  background: #0e1303;
+  background: linear-gradient(#0e1303, transparent);
+  transform: rotatex(90deg);
+}
+
+.podium__front:hover>.podium__image {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: translate(-50%, -80%) translateZ(-55px) rotateY(360deg);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
 }

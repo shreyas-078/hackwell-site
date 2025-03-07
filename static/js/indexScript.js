@@ -96,5 +96,28 @@ VANTA.WAVES({
   scale: 1.00,
   scaleMobile: 1.00,
   color: 0x0
+});
 
+document.addEventListener('DOMContentLoaded', function () {
+  const faders = document.querySelectorAll('.fade-in');
+
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add('visible');
+        appearOnScroll.unobserve(entry.target);
+      }
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
 });

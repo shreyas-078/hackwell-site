@@ -4,21 +4,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hackwell 2025</title>
+  <title>Hackwell 5.0</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/indexStyles.css') }}">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
   <script src="{{ url_for('static', filename='js/indexScript.js') }}" defer></script>
 </head>
 
+<div id="vanta-bg"></div> <!-- Target Element for Vanta.js -->
 
 <body>
-  <div id="vanta-bg"></div> <!-- Target Element for Vanta.js -->
-  <h1 id="hackwell-heading">Hackwell <br> 5.0</h1>
-  <h2 id="hackwell-subheading">Every line matters.</h2>
-  <h2 id="hackwell-hours">48-Hour Online Hackathon</h2>
+  <h1 id="hackwell-heading" class="fade-in">Hackwell <br> <span style="color: #90c020;" id="five-o">5.0</span></h1>
+  <h2 id="hackwell-subheading" class="fade-in">Every line matters.</h2>
+  <h2 id="hackwell-hours" class="fade-in">48-Hour Online Hackathon</h2>
 
-  <div id="about-college-container">
+  <div id="about-hackwell-container" class="fade-in">
+    <h2>About Hackwell 5.0</h2>
+    <p>Hackwell 5.0 is the 5th edition of the exhilarating hackathon series organized by JSS Academy of Technical
+      Education (JSSATE), Bengaluru in association with Honeywell. Over the years, Hackwell has successfully provided a
+      platform
+      for students to showcase their innovativeness, problem-solving skills, and technical expertise.
+      This year, participants will work on challenging problem statements provided by Honeywell, addressing key industry
+      challenges with cutting-edge technology and creative solutions. With exciting prizes sponsored by Honeywell, this
+      hackathon is a unique opportunity to collaborate, innovate, and gain industry recognition.
+      Join us in this thrilling journey of innovation, where ideas turn into solutions and creativity meets technology!
+    </p>
+  </div>
+
+  <div id="flyer-container" class="fade-in">
+    <img src="{{ url_for('static', filename='images/flyer.png') }}" alt="Hackwell Flyer" id="flyer">
+  </div>
+
+  <div class="association-container fade-in">
+    <span>In association with</span>
+    <img src="{{ url_for('static', filename='images/anveshan-text-logo.png') }}">
+  </div>
+
+  <div id="event-dates" class="fade-in">
+    <h2>EVENT DATE</h2>
+    <p>27th - 29th March 2025</p>
+    <h2>WHO CAN PARTICIPATE</h2>
+    <p>Students of Undergraduate and Postgraduate Programs</p>
+  </div>
+
+  <div class="qr-container fade-in">
+    <h2>SCAN TO REGISTER</h2>
+    <img src="{{ url_for('static', filename='images/qr_code.png') }}" alt="QR Code" id="qr-code">
+  </div>
+
+  <div id="registration-details-container" class="fade-in">
+    <h2>Last Date for Registration</h2>
+    <p>24th March, 2025</p>
+    <h2>REGISTRATION FEE</h2>
+    <p>₹300/- per team</p>
+    <h2>TEAM SIZE</h2>
+    <p>1-4 members per team</p>
+  </div>
+
+  <div class="prize-pool-container" class="fade-in">
+    <h1>Prize Pool</h1>
+
+    <div class="podium-container" class="fade-in">
+      <div class="podium">
+        <div class="podium__front podium__left">
+          <div>₹50k</div>
+          <div class="">2</div>
+          <div class="podium__image"><img src="https://source.unsplash.com/random/100x100" alt=""></div>
+        </div>
+        <div class="podium__front podium__center">
+          <div>₹75k</div>
+          <div class="">1</div>
+          <div class="podium__image"><img src="https://source.unsplash.com/random/100x100" alt=""></div>
+        </div>
+        <div class="podium__front podium__right">
+          <div>₹25k</div>
+          <div class="">3</div>
+          <div class="podium__image"><img src="https://source.unsplash.com/random/100x100" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="instructions-container" class="fade-in">
+    <h2>Instructions</h2>
+    <p>
+      • Team size: 1 to 4. <br>
+      • Participants are required to sign the competition rules, confidentiality agreement, and terms and conditions
+      before the event. <br>
+      • Problem statements are provided by Honeywell before the competition.<br>
+      • The solutions have to be uploaded in GitHub at the end of competition and will be shared to Honeywell. <br>
+    </p>
+  </div>
+
+  </div>
+  <div id="chief-patron-container" class="fade-in">
+    <h2>CHIEF PATRON</h2>
+    <p>
+      His Holiness Jagadguru Sri Shivarathri Deshikendra Mahaswamigalavaru, <br>
+      President JSS Mahavidyapeetha, Mysuru
+    </p>
+  </div>
+
+  <div id="patrons-container" class="fade-in">
+    <h2>PATRONS</h2>
+    <div id="patrons-list">
+      <div class="patron1">
+        Dr. C G Betsurmath,<br>
+        Executive Secretary, JSSMVP, Mysuru.
+      </div>
+      <div class="patron2">
+        Dr. B. Suresh,<br>
+        Director, TED, JSSMVP, Mysuru.
+      </div>
+      <div class="patron3">
+        Dr. H R Mahadevaswamy,<br>
+        Joint Director, TED, JSSMVP, Mysuru.
+      </div>
+      <div class="patron4">
+        Dr. Bhimasen Soragon,<br>
+        Principal , JSSATE, Bengaluru.
+      </div>
+    </div>
+  </div>
+
+
+  <div id="contact-container" class="fade-in">
+    <h2>CONTACT</h2>
+    <div id="contact-details">
+      <div class="contact1">Mrs. Snehalatha N,<br>
+        Asst. Professor, CSE, JSSATEB.<br>
+        9844399176<br>
+        <br>
+        <br>
+      </div>
+      <div class="contact2">Dr. Rajeshwari K.S,<br>
+        Asst. Professor, CSE, JSSATEB.<br>
+        9980145619<br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div id="about-college-container" class="fade-in">
     <h2>ABOUT THE COLLEGE</h2>
     <p>JSS Academy of Technical Education (JSSATE) was
       established in the year 1997 at Bengaluru under the
@@ -37,7 +165,7 @@
     </p>
   </div>
 
-  <div id="about-dept-container">
+  <div id="about-dept-container" class="fade-in">
     <h2>ABOUT THE DEPARTMENT</h2>
     <p>The Department of Computer Science and
       Engineering was established in the year 1997, with
@@ -52,7 +180,8 @@
       and contribute significantly to the society.
     </p>
   </div>
-  <div class="slideshow-container">
+
+  <div class="slideshow-container" class="fade-in">
     <div class="mySlides fade">
       <img src="{{ url_for('static', filename='images/pic1.jpg') }}" style="width:100%">
       <div class="text" style="background-color:black;"> Guest Panel</div>
@@ -78,67 +207,8 @@
     <a class="next" id="next">&#10095;</a>
     <div class="clear"></div>
   </div>
-  <br>
 
-  <div style="text-align:center" id="pagination">
-
-  </div>
-  <div id="chief-patron-container">
-    <h2>CHIEF PATRON</h2>
-    <p>
-      His Holiness Jagadguru Sri Shivarathri Deshikendra Mahaswamigalavaru, <br>
-      President JSS Mahavidyapeetha, Mysuru
-    </p>
-  </div>
-
-  <div id="patrons-container">
-    <h2>PATRONS</h2>
-    <div id="patrons-list">
-      <div class="patron1">
-        Dr. C G Betsurmath,<br>
-        Executive Secretary, JSSMVP, Mysuru.
-      </div>
-      <div class="patron2">
-        Dr. B. Suresh,<br>
-        Director, TED, JSSMVP, Mysuru.
-      </div>
-      <div class="patron3">
-        Dr. H R Mahadevaswamy,<br>
-        Joint Director, TED, JSSMVP, Mysuru.
-      </div>
-      <div class="patron4">
-        Dr. Bhimasen Soragon,<br>
-        Principal , JSSATE, Bengaluru.
-      </div>
-    </div>
-  </div>
-  <div class="association-container">
-    <span>In association with</span>
-    <img src="{{ url_for('static', filename='images/anveshan-text-logo.png') }}">
-  </div>
-
-  <div class="qr-container">
-    <h2>SCAN TO REGISTER</h2>
-    <img src="{{ url_for('static', filename='images/qr_code.png') }}" alt="QR Code" id="qr-code">
-  </div>
-
-  <div id="contact-container">
-    <h2>CONTACT</h2>
-    <div id="contact-details">
-      <div class="contact1">Mrs. Snehalatha N,<br>
-        Asst. Professor, CSE, JSSATEB.<br>
-        9844399176<br>
-        <br>
-        <br>
-      </div>
-      <div class="contact2">Dr. Rajeshwari K.S,<br>
-        Asst. Professor, CSE, JSSATEB.<br>
-        9980145619<br>
-        <br>
-        <br>
-      </div>
-    </div>
-  </div>
+  <div style="text-align:center" id="pagination" class="fade-in"></div>
 
 </body>
 
