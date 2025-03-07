@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 * {
-  font-family: 'VT323', monospace;
+  font-family: 'Archivo Black', monospace;
 }
 
 body,
@@ -86,7 +85,6 @@ body {
 
 #about-hackwell-container,
 #about-dept-container,
-#chief-patron-container,
 #patrons-container,
 #contact-container,
 #event-dates,
@@ -102,9 +100,20 @@ body {
   padding: 0 10% 0 10%;
 }
 
+#chief-patron-container h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+#chief-patron-container p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+
 #about-hackwell-container h2,
 #about-dept-container h2,
-#chief-patron-container h2,
 #patrons-container h2,
 #contact-container h2,
 #event-dates h2,
@@ -259,6 +268,13 @@ img {
   text-decoration: none;
   font-size: 3rem;
   margin-top: 0;
+  text-align: center;
+}
+
+.qr-container a {
+  text-decoration: underline;
+  color: white;
+  font-size: 2rem;
 }
 
 #qr-code {
@@ -325,23 +341,13 @@ h2 {
   text-underline-offset: 5px;
 }
 
-.association-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 10px;
-  margin: 3rem 0;
+
+#past-hackwell-events {
+  margin: 5rem 0 2rem 0;
+  font-size: 3rem;
+  text-align: center;
 }
 
-.association-container img {
-  width: 20vw;
-  margin-left: 2rem;
-  object-fit: contain;
-}
 
 #contact-details {
   font-size: 1.7rem;
@@ -599,10 +605,10 @@ h1 {
 }
 
 .podium-container {
-  --_podium-size: 4px;
+  --_podium-size: 3px;
 
   @media only screen and (min-width: 600px) {
-    --_podium-size: 7.5px;
+    --_podium-size: 5px;
   }
 
   @media only screen and (min-width: 960px) {
