@@ -354,6 +354,10 @@ h2 {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  #flow-diagram {
+    width: 70%;
+  }
+
   #flyer {
     width: 80%;
   }
@@ -743,6 +747,10 @@ h1 {
   to {
     transform: translate(-50%, -80%) translateZ(-55px) rotateY(360deg);
   }
+}
+
+#flow-diagram {
+  width: 70%;
 }
 
 .fade-in {
