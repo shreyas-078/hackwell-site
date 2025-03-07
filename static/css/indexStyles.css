@@ -12,6 +12,11 @@ html {
   height: 100%;
 }
 
+.prize-pool-container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 #hackwell-heading {
   margin: 0;
   margin-top: 2rem;
@@ -120,7 +125,7 @@ body {
 #registration-details-container h2,
 #about-college-container h2,
 #instructions-container h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 1rem;
   text-align: center;
 }
@@ -146,7 +151,7 @@ body {
 #about-college-container p,
 #instructions-container p {
   margin: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -346,7 +351,7 @@ h2 {
 
 #past-hackwell-events {
   margin: 5rem 0 2rem 0;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -376,6 +381,7 @@ h2 {
 
   #patrons-list {
     width: 90%;
+    gap: 1rem;
   }
 
   #patrons-list div {
@@ -539,6 +545,7 @@ h2 {
 
   #patrons-list {
     width: 90%;
+    gap: 3rem;
   }
 
   #patrons-list div {
@@ -547,11 +554,11 @@ h2 {
   }
 
   #chief-patron-container h2 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   #chief-patron-container p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   #hackwell-heading {
@@ -574,6 +581,14 @@ h2 {
   #registration-details-container h2,
   #about-college-container h2,
   #instructions-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .qr-container h2 {
+    font-size: 2rem;
+  }
+
+  .qr-container a {
     font-size: 1.5rem;
   }
 
@@ -582,9 +597,12 @@ h2 {
   #patrons-container p,
   #contact-container p,
   #event-dates p,
-  #registration-details-container p,
   #about-college-container p,
   #instructions-container p {
+    font-size: 1rem;
+  }
+
+  #registration-details-container p {
     font-size: 1rem;
   }
 

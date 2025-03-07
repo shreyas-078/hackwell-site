@@ -27,7 +27,9 @@
       This year, participants will work on challenging problem statements provided by Honeywell, addressing key industry
       challenges with cutting-edge technology and creative solutions. With exciting prizes sponsored by Honeywell, this
       hackathon is a unique opportunity to collaborate, innovate, and gain industry recognition.
-      Join us in this thrilling journey of innovation, where ideas turn into solutions and creativity meets technology!
+      <br> <br><span style="color: #90c020;">Join us in this thrilling journey of innovation, where ideas turn into
+        solutions and creativity meets
+        technology!</span>
     </p>
   </div>
 
@@ -43,9 +45,9 @@
   </div>
 
   <div class="qr-container fade-in">
-    <h2>SCAN TO REGISTER</h2>
+    <h2 style="color: #90c020;">SCAN TO REGISTER</h2>
     <img src="{{ url_for('static', filename='images/qr_code.png') }}" alt="QR Code" id="qr-code"><br>
-    <a href="https://forms.gle/CXswkxocdbCizD7M8">Click here for link to register</a>
+    <a href="https://forms.gle/CXswkxocdbCizD7M8">Click here to register</a>
   </div>
 
   <div id="registration-details-container" class="fade-in">
@@ -101,7 +103,31 @@
       His Holiness Jagadguru Sri Shivarathri Deshikendra Mahaswamigalavaru, <br>
       President JSS Mahavidyapeetha, Mysuru
     </p>
+  </div>
 
+  <div id="patrons-container" class="fade-in">
+    <h2>PATRONS</h2>
+    <div id="patrons-list">
+      <div class="patron1">
+        Dr. C G Betsurmath<br>
+        Executive Secretary, JSSMVP, Mysuru.
+      </div>
+      <div class="patron2">
+        Dr. B. Suresh<br>
+        Director, TED, JSSMVP, Mysuru.
+      </div>
+      <div class="patron3">
+        Dr. H R Mahadevaswamy<br>
+        Joint Director, TED, JSSMVP, Mysuru.
+      </div>
+      <div class="patron4">
+        Dr. Bhimasen Soragon<br>
+        Principal , JSSATE, Bengaluru.
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
     <h2>Convener</h2>
     <p>
       Dr. Prabhudev Jagadeesh<br>
@@ -109,40 +135,18 @@
     </p>
   </div>
 
-  <div id="patrons-container" class="fade-in">
-    <h2>PATRONS</h2>
-    <div id="patrons-list">
-      <div class="patron1">
-        Dr. C G Betsurmath,<br>
-        Executive Secretary, JSSMVP, Mysuru.
-      </div>
-      <div class="patron2">
-        Dr. B. Suresh,<br>
-        Director, TED, JSSMVP, Mysuru.
-      </div>
-      <div class="patron3">
-        Dr. H R Mahadevaswamy,<br>
-        Joint Director, TED, JSSMVP, Mysuru.
-      </div>
-      <div class="patron4">
-        Dr. Bhimasen Soragon,<br>
-        Principal , JSSATE, Bengaluru.
-      </div>
-    </div>
-  </div>
-
 
   <div id="contact-container" class="fade-in">
     <h2>CONTACT</h2>
     <div id="contact-details">
-      <div class="contact1">Mrs. Snehalatha N,<br>
-        Asst. Professor, CSE, JSSATEB.<br>
+      <div class="contact1">Mrs. Snehalatha N<br>
+        Asst. Professor, CSE<br>
         9844399176<br>
         <br>
         <br>
       </div>
-      <div class="contact2">Dr. Rajeshwari K.S,<br>
-        Asst. Professor, CSE, JSSATEB.<br>
+      <div class="contact2">Dr. Rajeshwari K.S<br>
+        Asst. Professor, CSE<br>
         9980145619<br>
         <br>
         <br>
@@ -151,7 +155,7 @@
   </div>
 
   <div id="about-college-container" class="fade-in">
-    <h2>ABOUT THE COLLEGE</h2>
+    <h2 style="color: #90c020;">ABOUT THE COLLEGE</h2>
     <p>JSS Academy of Technical Education (JSSATE) was
       established in the year 1997 at Bengaluru under the
       umbrella of JSS Mahavidyapeetha, Mysuru. The
@@ -170,7 +174,7 @@
   </div>
 
   <div id="about-dept-container" class="fade-in">
-    <h2>ABOUT THE DEPARTMENT</h2>
+    <h2 style="color: #90c020;">ABOUT THE DEPARTMENT</h2>
     <p>The Department of Computer Science and
       Engineering was established in the year 1997, with
       the objective of imparting quality education in the
@@ -192,28 +196,23 @@
     </p>
   </div>
 
-  <h2 id="past-hackwell-events">Past Hackwell Events</h2>
+  <h2 id="past-hackwell-events" style="color: #90c020;">Past Hackwell Events</h2>
 
   <div class="slideshow-container" class="fade-in">
     <div class="mySlides fade">
       <img src="{{ url_for('static', filename='images/pic1.jpg') }}" style="width:100%">
-      <div class="text" style="background-color:black;"> Guest Panel</div>
     </div>
 
     <div class=" mySlides fade">
       <img src="{{ url_for('static', filename='images/pic2.jpg') }}" style="width:100%">
-      <div class="text" style="background-color:black ;">Lamp Lighting Ceremony </div>
     </div>
 
     <div class="mySlides fade">
       <img src="{{ url_for('static', filename='images/pic3.jpg') }}" style="width:100%">
-      <div class="text" style="background-color:black ;">Hackwell Legacy</div>
     </div>
 
     <div class="mySlides fade">
       <img src="{{ url_for('static', filename='images/pic4.jpg') }}" style="width:100%">
-
-      <div class="text" style="background-color:black ;">Participants</div>
     </div>
 
     <a class="prev" id="prev">&#10094;</a>
